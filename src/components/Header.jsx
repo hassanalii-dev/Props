@@ -1,12 +1,24 @@
 function Header({ name, age, companyInfo }) {
   return (
     <div>
-      <h1>{name}</h1>
-      <p>Age: {age}</p>
+      <div>
+        This is Header.
+        <hr />
+        <h1>User Details:</h1>
+        User logged in is {name}.
+        <br />
+        User age is {age}
+        <br />
+      </div>
 
-      <h2>{companyInfo.name}</h2>
-      <p>{companyInfo.address}</p>
-      <p>{companyInfo.contact}</p>
+      <div>
+        <h1>Company Info:</h1>
+        {companyInfo.name}
+        <br />
+        {companyInfo.address}
+        <br />
+        {companyInfo.contact}
+      </div>
     </div>
   );
 }

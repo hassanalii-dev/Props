@@ -1,18 +1,23 @@
-function Counter({digit, setDigit}){
-    function increament(){
-        setDigit(digit+1)
-    }
-    function decreament(){
-        setDigit(digit-1)
-    }
+function Counter({digit,setDigit}){
+    function increamnet(){
+            setDigit(digit+1)
+        }
+        function decreamnet(){
+            setDigit(digit-1)
+        }
+        
     return(
-        <div style={{color:"green"}}>
+        
+        <div style={{color:"aqua"}}>
+            <h1>Counter:</h1>
             This is Counter
+
             <div>
                 Count : {digit}
             </div>
-            <button onClick={increament}>Increament</button>
-            <button onClick={decreament}>Decreament</button>
+
+            <button onClick={increamnet}>Increament</button>
+            <button onClick={decreamnet}>Decreament</button>
         </div>
     )
 }
